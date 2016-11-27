@@ -1,0 +1,4 @@
+dk\rulebase\facade\Controller.class
+dk\rulebase\service\GenericResource.class
+dk\rulebase\service\RuleBaseService.class
+dk\rulebase\dto\LoanRequestDTO.class
