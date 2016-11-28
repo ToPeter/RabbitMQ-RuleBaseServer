@@ -24,6 +24,7 @@ public class GenericResource {
 
     @Context
     private UriInfo context;
+    private String whatever;
 
     /**
      * Creates a new instance of GenericResource
@@ -32,22 +33,27 @@ public class GenericResource {
     }
 
     /**
-     * Retrieves representation of an instance of dk.rulebase.service.GenericResource
+     * Retrieves representation of an instance of
+     * dk.rulebase.service.GenericResource
+     *
      * @return an instance of java.lang.String
      */
     @GET
     @Produces(MediaType.APPLICATION_XML)
     public String getXml() {
         //TODO return proper representation object
-        throw new UnsupportedOperationException();
+//        throw new UnsupportedOperationException();
+        return whatever;
     }
 
     /**
      * PUT method for updating or creating an instance of GenericResource
+     *
      * @param content representation for the resource
      */
     @PUT
     @Consumes(MediaType.APPLICATION_XML)
     public void putXml(String content) {
+        whatever = content;
     }
 }
